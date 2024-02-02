@@ -1,21 +1,10 @@
-import React from 'react';
-import { Vortex } from 'react-loader-spinner';
-import { LoadWrapper } from './Loader.styled'
+import DotLoader from 'react-spinners/ClipLoader';
+import s from './Loader.module.css';
 
-const Loader = () => {
+export default function Loader() {
   return (
-    <LoadWrapper>
-      <Vortex
-        visible={true}
-        height="80"
-        width="80"
-        ariaLabel="vortex-loading"
-        wrapperStyle={{}}
-        wrapperClass="vortex-wrapper"
-        colors={['red', 'green', 'blue', 'yellow', 'orange', 'purple']}
-      />
-    </LoadWrapper>
+    <div className={s.overlay}>
+      <DotLoader size={250} color={'#461646'} className={s.loader} />
+    </div>
   );
-};
-
-export default Loader;
+}
