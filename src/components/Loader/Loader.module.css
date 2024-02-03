@@ -1,15 +1,14 @@
-
-.overlay{
-    position: fixed;
-    top:0;
-    left:0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.8);
-    width: 100vw;
-    height: 100vh;
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(15, 233, 15, 0.8);
+  width: 100vw;
+  height: 100vh;
 }
-.loader{
-    z-index: 1200;
+.loader {
+  z-index: 1200;
 }
